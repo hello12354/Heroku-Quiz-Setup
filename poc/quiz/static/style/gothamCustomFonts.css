@@ -2,84 +2,84 @@
 
 @font-face {
     font-family: 'gotham_condensedmedium';
-    src: url('../quiz/static/customFont/gotham_condensed_medium-webfont.woff2') format('woff2'), url('../quiz/static/customFont/gotham_condensed_medium-webfont.woff') format('woff');
+    src: url('/customFont/gotham_condensed_medium-webfont.woff2') format('woff2'), url('/customFont/gotham_condensed_medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gotham_blackregular';
-    src: url('../quiz/static/customFont/gotham-black-webfont.woff2') format('woff2'), url('../quiz/static/customFont/gotham-black-webfont.woff') format('woff');
+    src: url('/customFont/gotham-black-webfont.woff2') format('woff2'), url('/customFont/gotham-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gotham_blackitalic';
-    src: url('../quiz/static/customFont/gotham-blackitalic-webfont.woff2') format('woff2'), url('../quiz/static/customFont/gotham-blackitalic-webfont.woff') format('woff');
+    src: url('/customFont/gotham-blackitalic-webfont.woff2') format('woff2'), url('/customFont/gotham-blackitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gotham_boldregular';
-    src: url('../quiz/static/customFont/gotham-bold-webfont.woff2') format('woff2'), url('../quiz/static/customFont/gotham-bold-webfont.woff') format('woff');
+    src: url('/customFont/gotham-bold-webfont.woff2') format('woff2'), url('/customFont/gotham-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gotham_bolditalic';
-    src: url('../quiz/static/customFont/gotham-bolditalic-webfont.woff2') format('woff2'), url('../quiz/static/customFont/gotham-bolditalic-webfont.woff') format('woff');
+    src: url('/customFont/gotham-bolditalic-webfont.woff2') format('woff2'), url('/customFont/gotham-bolditalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gotham_lightregular';
-    src: url('../quiz/static/customFont/gotham-light-webfont.woff2') format('woff2'), url('../quiz/static/customFont/gotham-light-webfont.woff') format('woff');
+    src: url('/customFont/gotham-light-webfont.woff2') format('woff2'), url('/customFont/gotham-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gotham_lightitalic';
-    src: url('../quiz/static/customFont/gotham-lightitalic-webfont.woff2') format('woff2'), url('../quiz/static/customFont/gotham-lightitalic-webfont.woff') format('woff');
+    src: url('/customFont/gotham-lightitalic-webfont.woff2') format('woff2'), url('/customFont/gotham-lightitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gotham_mediumregular';
-    src: url('../quiz/static/customFont/gotham-medium-webfont.woff2') format('woff2'), url('../quiz/static/customFont/gotham-medium-webfont.woff') format('woff');
+    src: url('/customFont/gotham-medium-webfont.woff2') format('woff2'), url('/customFont/gotham-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gotham_mediumitalic';
-    src: url('../quiz/static/customFont/gotham-mediumitalic-webfont.woff2') format('woff2'), url('../quiz/static/customFont/gotham-mediumitalic-webfont.woff') format('woff');
+    src: url('/customFont/gotham-mediumitalic-webfont.woff2') format('woff2'), url('/customFont/gotham-mediumitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gotham_thinregular';
-    src: url('../quiz/static/customFont/gotham-thin-webfont.woff2') format('woff2'), url('../quiz/static/customFont/gotham-thin-webfont.woff') format('woff');
+    src: url('/customFont/gotham-thin-webfont.woff2') format('woff2'), url('/customFont/gotham-thin-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gotham_thinitalic';
-    src: url('../quiz/static/customFont/gotham-thinitalic-webfont.woff2') format('woff2'), url('../quiz/static/customFont/gotham-thinitalic-webfont.woff') format('woff');
+    src: url('/customFont/gotham-thinitalic-webfont.woff2') format('woff2'), url('/customFont/gotham-thinitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gotham_ultraregular';
-    src: url('../quiz/static/customFont/gotham-ultra-webfont.woff2') format('woff2'), url('../quiz/static/customFont/gotham-ultra-webfont.woff') format('woff');
+    src: url('/customFont/gotham-ultra-webfont.woff2') format('woff2'), url('/customFont/gotham-ultra-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
