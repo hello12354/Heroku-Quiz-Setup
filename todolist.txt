@@ -1,0 +1,160 @@
+FE:
+- Fix the way the accordion works: right now it doesn't collapse when another question is selected
+
+- Figure out how to make checkboxes rounded
+
+- Response page
+
+- If industry isnt selected on the quiz, the model breaks
+
+BE:
+- data and response storage
+
+Data:
+- Data explorations
+- Exploratory data analysis
+- Model selection
+- Model building
+- ranked choices
+- performance improvements
+
+Design:
+- form
+- pre-form landing page?
+- post-form landing page/response page
+- program definition & exploration page
+
+Open Questions:
+- How to score models?
+  -Old FYDP team  did 5 fold validation for cross fold validation
+  -Leave one out is a more consistent and more easy to explain
+
+Old model:
+- old model is built on deprecated code. I can't run it and make it work easily. This means that we wont be able to compare each of our models to each of the previous models ourselves for a 1:1 comparison. We have to rely on their data. I could potentially fix it with a sprint or two dedicated to refactoring their codebase,  but I don't see the value.
+- Old team experimented with decision trees, associations, and naive bayes
+
+
+on deploy:
+- set model_name somewhere?
+- copy model?
+- copy data_load?
+- copy dictionaries.py?
+- maybe move model building into poc?
+
+Add New Model:
+- Add quiz_data.csv, exported_model_files, data_load, and dictionaries to quiz folder under poc
+- Rename imports to include from . "file" import *
+- Add poc/quiz/ to retrieve all filenames
+- Update model name
+
+
+Sprint End JAN 22:
+
+UPDATES:
+Current Issues:
+- If industry isnt selected on the quiz, the model breaks
+- old model is built on deprecated code. I can't run it and make it work easily. This means that we wont be able to compare each of our models to each of the previous models ourselves for a 1:1 comparison. We have to rely on their data. I could potentially fix it with a sprint or two dedicated to refactoring their codebase,  but I don't see the value.
+- New data push:
+  -- NB = 36% accuracy, ranks nano 1 caused by +500 or 33% lift in responses
+  -- ent = No ranked result, results change every model build. Accuracy = 35%
+  -- LRR = ranks chem 1, 44% accuracy, no lift with more data
+
+
+- establish model building principles and ranked list of experiments
+- division of labor
+
+Decision tree:
+- test_vector got nano with naive bayes, tron with decision trees
+- Decision trees give no probability for anything other than the one selected
+- Decision tree accuracy = <33 % because of how decision trees work, value changes
+
+Associations:
+- Not a predictor, discover associations between selections
+
+Support vector machines:
+- Can return one prediction, no probabilities
+
+Logistic Regression:
+- 44% accuracy
+
+Focus on:
+- Skewness
+- not happy placement
+- data balancing
+- association rule mining
+- feature selection
+
+- explore trends
+- start creating prioritized hypothesis list
+
+- front end building
+
+
+
+Sprint End JAN 29:
+completed:
+- not happy data complete
+- association rule mining complete
+- skew data method complete
+- feature selection method complete
+- happy bias comparison complete
+- gender bias comparison complete
+
+Remaining:
+- Dive deeper into association rule mining
+- Dive deeper into feature selection
+- explore trends
+- start creating prioritized hypothesis list
+- front end building
+- cross validation scoring
+- revive models from the original team
+
+
+sprint ending Feb 5th
+completed:
+- Created dictionary for model experiments
+- Recreated model building environmentmes
+- SVM - LE method created
+- one_hot_encode models
+- merge encode models
+- binary data classifier nb
+- binary data classifier lrr
+- binary data classifier tree
+- binary data classifier svm
+- pickle binary classifiers
+
+remaining
+- data balancing:  Look at the binary classifier method, theres a lot there to work with
+- depickle binary data classifiers
+- cross validation scoring
+- not_happy reassignment scoring
+- happy hold out scoring # these are the 7 rows of program-gender combination
+- save scores to csv when scored for each scoring method
+- time the check_skew method
+
+
+back-burner:
+- Dive deeper into association rule mining
+- Dive deeper into feature selection
+- start creating prioritized hypothesis list
+- front end building
+- revive models from the original team
+- build back-end to store responses
+- build response method for binary classifer models
+
+
+
+RECIPROCAL RANK SCORE = 1/rank of correct program
+
+Average Precision  in this ranked scenario is not really possible
+
+NDCG?
+
+Average accuracy could be used within the binary classifiers to compare their performances to each other. But the value diminishes
+
+How often did we get the correct program in the top 3 ?
+
+CHECK FOR MEASURES OF error
+
+
+We should be able to change the individual classifiers to improve their performance but it should also be neutral or improve the the overall family measure

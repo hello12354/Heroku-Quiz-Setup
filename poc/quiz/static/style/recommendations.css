@@ -1,0 +1,188 @@
+body {
+    font-family: 'gotham_condensedmedium';
+}
+.content {
+    padding: 0px 10px;
+    height: calc(100% - 150px);
+    width: calc(100% - 245px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-top: 0;
+    overflow-y: scroll;
+}
+
+.program{
+    display:none;
+}
+
+.column {
+    float: left;
+    width: 40%;
+    position: relative;
+    padding-left: 20px;
+    }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    position: relative;
+    width: 100%;
+    }
+
+.sidenav { 
+    height: calc(100% - 300px);
+    width: 245px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150px;
+    left: 0;
+    padding-top: 5px;
+    /* border-right: 5px solid #EEEEEE; */
+    overflow-y: scroll;
+}
+.emailSection {
+    text-align: center;
+    height: 100px;
+    width: 220px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+#emailSubmit {
+    display: inline;
+    position: absolute;
+    right: 0;
+    margin-left: -150px;
+    margin-right: 0;
+}
+
+a, a:hover, a:after, a:visited {
+    color: #58058B;
+}
+.sidenav a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    color: #000000;
+}
+.sidenav a:hover {
+    background-color: #DFDFDF;
+    text-decoration: none;
+    color: #000000;
+
+}
+.activelink {
+    background-color: #EEEEEE;
+    color: #58058B !important;
+}
+.title {
+    height: 150px;
+    top: 0;
+    background-color: white;
+    width: calc(100% - 245px);
+    right: 0;
+    position: absolute;
+    padding: 0px 10px;
+}
+
+.nav.nav-tabs {
+    background: #D0B4E7;
+    /* color: #57058B; */
+}
+.nav.nav-tabs a {
+    color: #57058B;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background-color: #57058B;
+    color: #D0B4E7;
+}
+
+.tab-content{
+    background-color: #FAFAFA;
+}
+
+.button {
+    background:#D0B4E7; 
+    border:2px solid #57058B;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    color: #57058B;
+    position: absolute;
+    margin-left: -150px;
+    margin-right: 0;
+    text-align: center;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+}
+
+.button:hover {
+    background:#57058B; 
+    color: #D0B4E7;
+}
+
+.back {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 245px;
+    height: 150px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+#backButton {
+    position: relative;
+    margin: auto;
+    top: 30%;
+    width: 125px;
+    height: 40px;
+}
+#email {
+    width: 165px;
+}
+.email p {
+    padding-left: 20px;
+}
+.fa-eye {
+    position: absolute;
+    right: 0;
+    display: inline !important;
+    visibility: hidden;
+    padding-right: 5px;
+}
+
+.show {
+    visibility: visible !important;
+}
+.hide {
+    visibility: hidden;
+}
+#afterSubmit {
+    visibility: hidden;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #57058B; 
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background:#57058B; 
+}
