@@ -8,7 +8,7 @@ urlpatterns = [
     path(r'recommendations', views.recommendations, name='recommendations'),
     url(r'submit', views.submit, name='submit'),
     url(r'startQuiz', views.quiz, name='startQuiz'),
-    url(r'programs', views.programs, name='programs'),
+    url(r'programInfo', views.programs, name='programInfo'),
     url(r'about', views.about, name='about'),
     url(r'emailSubmission', views.email, name='emailSubmit')
 
