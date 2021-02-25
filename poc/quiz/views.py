@@ -39,7 +39,7 @@ def programs(request):
             'career_set':list(career_set),
             'description_set':list(description_set)
             }
-    return render(request,'quiz/programs.html',context)
+    return render(request,'templates/quiz/programs.html',context)
 
 def email(request):
         try:
